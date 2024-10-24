@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Pesca y Caza</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Asegúrate de que la carpeta y el archivo existan -->
+</head>
+<body>
+    <header>
+        <h1>Tienda de Pesca y Caza</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="admin.html" id="registrarseBtn">Registrarse</a></li> <!-- Botón de Registrarse -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Productos disponibles</h2>
+        <div id="productos-container" class="productos-grid"></div> <!-- Aquí se cargarán los productos -->
+    </section>
+
+    <section id="carrito">
+        <h2>Tu Carrito</h2>
+        <div id="carrito-container" class="carrito-grid"></div>
+        <div class="carrito-actions">
+            <button id="vaciarCarritoBtn">Vaciar Carrito</button>
+            <button id="comprarBtn">Comprar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Pesca y Caza. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="controllers/app.js"></script> <!-- Este archivo se encargará de cargar productos -->
+</body>
+</html>
